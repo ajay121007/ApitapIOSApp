@@ -1,0 +1,38 @@
+//
+//  ApiTap-Prefix.pch
+//  ApiTap
+//
+//  Created by Abhishek Singla on 13/03/16.
+//  Copyright © 2016 ApiTap. All rights reserved.
+//
+
+#ifndef ApiTap_Prefix_pch
+#define ApiTap_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ModelManager.h"
+#import "BaseViewController.h"
+#import "MFSideMenu.h"
+
+#import "LabeledActivityIndicatorView.h"
+#import "Constants.h"
+#import "GlobalClass.h"
+#import "ShowAlertView.h"
+#import "CustomAlertView.h"
+
+#define appdelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define model_manager ((ModelManager *)[ModelManager modelManager])
+
+//Global String
+#pragma mark Global String Macros
+
+#define kTimeout 60
+
+//#define kServerDomain @"http://mobapi.plankapp.com/"
+#define kServerDomain @"http://mobapi-staging.plankapp.com/"
+
+//#define kClassIconsDomain @"http://webapp.plankapp.com/"
+#define kClassIconsDomain @"http://webapp-staging.plankapp.com/"
+#endif /* ApiTap_Prefix_pch */
